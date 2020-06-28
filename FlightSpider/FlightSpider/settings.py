@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'FlightSpider.pipelines.FlightspiderPipeline': 100,
+   'FlightSpider.pipelines.FlightspiderPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -88,3 +88,10 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# logging settings
+LOG_ENABLED = True
+LOG_LEVEL = "WARNING"
+from datetime import datetime
+TODAY = datetime.now()
+LOG_FILE = "log/{}_{}_{}.log".format(TODAY.year,TODAY.month,TODAY.day)

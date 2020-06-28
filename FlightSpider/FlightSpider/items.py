@@ -11,12 +11,15 @@ import scrapy
 class FlightspiderItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    flight_dt = scrapy.Field()
     qry_dt = scrapy.Field()
     line = scrapy.Field()
     dep_tm = scrapy.Field()
     dep_ap = scrapy.Field()
+    dep_ct = scrapy.Field()
     arr_tm = scrapy.Field()
     arr_ap = scrapy.Field()
+    arr_ct = scrapy.Field()
     plane_type = scrapy.Field()
     price = scrapy.Field()
     discount = scrapy.Field()
