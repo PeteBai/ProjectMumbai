@@ -11,12 +11,6 @@ class FlightspiderPipeline:
 
     def __init__(self):
         self.db = pymysql.connect(
-        host = '106.54.70.122',  # IP，MySQL数据库服务器IP地址
-        port = 3306,  # 端口，默认3306，可以不输入
-        user = 'Bxy',  # 数据库用户名
-        password = '3.14159zsyzl',  # 数据库登录密码
-        database = 'flight',  # 要连接的数据库
-        charset = 'utf8')  # 字符集，注意不是'utf-8')
         # self.db = pymysql.connect(
         #     host='localhost',  # IP，MySQL数据库服务器IP地址
         #     port=3306,  # 端口，默认3306，可以不输入
